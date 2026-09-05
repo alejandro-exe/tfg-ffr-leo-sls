@@ -1,0 +1,71 @@
+# =====================================================================
+#  Simulador SLS LEO-FFR -- repositorio de CODIGO
+#  Regla general: aqui solo va codigo. Todo lo que produce una ejecucion
+#  (resultados, figuras, logs) y todo lo que no es obra propia (mapas
+#  ITU-R) queda fuera.
+# =====================================================================
+
+# --- Resultados de los experimentos -----------------------------------
+#  Los runners guardan con nombres desnudos, luego caen en la RAIZ del
+#  proyecto (ver "Puesta en marcha" en el README). Se regeneran ejecutando
+#  su runner; el orden esta en la seccion 5 del README.
+*.mat
+
+# --- Figuras ----------------------------------------------------------
+#  Una carpeta por experimento, creada por save_fig en el directorio de
+#  trabajo. Regenerables volviendo a ejecutar el runner.
+figs_*/
+
+#  Salidas de los scripts de figuras/scripts. OJO: escriben en REDACCION/
+#  porque la ruta esta en el codigo, no en el nombre de la carpeta de
+#  scripts (declarado en el README, seccion 4).
+REDACCION/
+
+#  Figuras y logs de h2_rerun (el codigo de esa carpeta SI se versiona)
+h2_rerun/figs/*.png
+h2_rerun/results/
+h2_rerun/logs/
+
+# --- Datos ITU-R: NO son obra propia ----------------------------------
+#  Paquete de soporte de MathWorks, derivado de material de la UIT.
+#  Se instalan desde MATLAB (README, seccion 2.2). Redundante con *.mat,
+#  pero explicito para que se entienda que la exclusion es deliberada.
+maps.mat
+p836.mat
+p837.mat
+p840.mat
+citation.txt
+
+# --- Entorno local de MATLAB ------------------------------------------
+*.asv
+*.m~
+*.autosave
+slprj/
+sccprj/
+codegen/
+octave-workspace
+
+# --- Entorno de desarrollo --------------------------------------------
+.claude/
+.vscode/
+.idea/
+
+# --- Logs y volcados de consola ---------------------------------------
+#  Contienen rutas absolutas de la maquina donde se ejecuto.
+*.log
+*.out
+diary
+diary.txt
+
+# --- Documentos generados ---------------------------------------------
+#  Regenerables desde sus fuentes; no se versionan.
+*.pdf
+*.html
+
+# --- Sistema operativo ------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*

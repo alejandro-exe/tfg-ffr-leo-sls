@@ -1,0 +1,52 @@
+# =====================================================================
+# Simulador SLS de reutilizacion fraccionaria de frecuencias en LEO
+# Este repositorio distribuye SOLO CODIGO. Los resultados y las figuras
+# se regeneran ejecutando el pipeline documentado en README.md.
+# =====================================================================
+
+# --- Resultados de simulacion ---------------------------------------
+# Todos los .mat quedan fuera: se regeneran, y en conjunto pasan de 90 MB.
+*.mat
+
+# Excepcion: descomenta si decides publicar el ancla historica que
+# ningun programa regenera (la usa test_ctx_blocked).
+# !ffr_results_T66.mat
+
+# --- Mapas digitales ITU-R ------------------------------------------
+# No son obra propia: proceden del paquete de soporte de MathWorks.
+# Los cubre la regla *.mat de arriba; se listan aqui por claridad.
+#   maps.mat  p836.mat  p837.mat  p840.mat
+
+# --- Figuras generadas ----------------------------------------------
+figs_*/
+figuras/_staging/
+figuras/_verificacion/
+*.fig
+
+# --- Artefactos de MATLAB -------------------------------------------
+*.asv
+*.m~
+*.autosave
+*.mex*
+slprj/
+sccprj/
+codegen/
+
+# --- Registros de ejecucion -----------------------------------------
+*.log
+logs/
+h2_rerun/logs/
+
+# --- Documentos generados -------------------------------------------
+*.pdf
+*.html
+
+# --- Entorno local del desarrollador --------------------------------
+.claude/
+.vscode/
+.idea/
+
+# --- Basura del sistema operativo -----------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini

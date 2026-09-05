@@ -1,0 +1,11 @@
+TODO: licencia pendiente de elegir por el autor.
+
+Hasta que este fichero se sustituya por el texto de una licencia concreta, no se
+concede ningun permiso de uso, copia, modificacion o distribucion sobre este
+codigo.
+
+Nota para quien complete este fichero: los datos digitales ITU-R que necesita el
+simulador (maps.mat, p836.mat, p837.mat, p840.mat) NO se distribuyen con este
+repositorio y NO son obra propia; proceden del paquete de soporte de MathWorks y
+derivan de material de la UIT. Se instalan desde MATLAB. Ver el apartado
+"Requisitos" del README.
